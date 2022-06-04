@@ -97,6 +97,9 @@
     border-radius: 2px;
     top: 29px;
     position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 35px;
+    }
   }
   &__text-after::after {
     content: "";
