@@ -1,0 +1,45 @@
+.can-do__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.can-do__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.a .can-do__img {
+  border: 0px;
+}
+.section-can-do {
+  display: none;
+  padding-bottom: var(--padding-often);
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: var(--padding-often);
+    padding-top: var(--padding-often);
+  }
+}
+.can-do__text {
+  font-family: "Roboto";
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--whiteone);
+  padding: 27px 82px;
+  text-transform: uppercase;
+}
+.can-do__img {
+  position: relative;
+}
+.can-do__bg {
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  min-width: 370px;
+  bottom: 3px;
+}

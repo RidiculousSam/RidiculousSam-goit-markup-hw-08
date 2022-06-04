@@ -1,0 +1,56 @@
+a {
+  text-decoration: none;
+}
+
+.list {
+  font-family: "Roboto";
+  font-style: normal;
+  list-style: none;
+  border: none;
+}
+.noway {
+  border: #000000;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+.button {
+  cursor: pointer;
+}
+.portfolio-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Raleway";
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
