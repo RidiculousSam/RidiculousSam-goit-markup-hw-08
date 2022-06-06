@@ -7,19 +7,19 @@
     padding-top: var(--padding-often);
   }
   &__items {
-    margin-right: 30px;
+    margin-right: 0px;
     margin-bottom: 30px;
-    @media screen and (max-width: 767px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-direction: column;
-      width: calc(100% / 2 - 30px);
+      flex-basis: calc((100% - 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
   &__card {
@@ -34,7 +34,9 @@
     padding: 25px 75px;
     border-radius: 4px;
     background-color: #f5f4fa;
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -42,9 +44,14 @@
       padding: 25px 100px;
     }
   }
-  &__items:nth-child(even) {
-    margin-right: 0px;
-  }
+  // &__items:nth-child(even) {
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  // }
+  // &__items:nth-child(odd) {
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //     // margin-left: 30px;
+  //   }
 
   &__header {
     font-weight: 700;
@@ -70,10 +77,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -30px;
+      gap: 30px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
+      gap: 30px;
     }
   }
 }

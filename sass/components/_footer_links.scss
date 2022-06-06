@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 60px;
+    margin-left: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 60px;
@@ -39,6 +39,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 .footer-soc-item:last-child {
   margin-right: 0;

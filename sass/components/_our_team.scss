@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
+  margin-bottom: -30px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -21,6 +22,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
+      font-size: 36px;
       margin-bottom: 50px;
     }
   }
@@ -31,10 +33,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -30px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
+      gap: 30px;
+      margin-bottom: -30px;
     }
   }
   &__item {
@@ -50,7 +53,7 @@
       width: 100%;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc(100% / 2 - 30px);
+      flex-basis: calc((100% - 30px) / 2);
       margin-right: 30px;
       margin-bottom: 30px;
     }
@@ -64,8 +67,9 @@
     }
   }
 
-  &__item:nth-child(odd) {
+  &__item:nth-child(even) {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 0px;
     }
   }
   &__names {
