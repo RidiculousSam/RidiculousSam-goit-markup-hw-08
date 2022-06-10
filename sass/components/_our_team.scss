@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
-  margin-bottom: -30px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -27,17 +27,21 @@
     }
   }
   &__list {
+    margin-bottom: -30px;
     @media screen and (min-width: 480px) and(max-width:767) {
       width: 100%;
+      margin-bottom: -30px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: -30px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      gap: 30px;
+      gap: 0px;
       margin-bottom: -30px;
+      background-position: 0px;
     }
   }
   &__item {

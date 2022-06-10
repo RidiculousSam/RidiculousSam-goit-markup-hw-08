@@ -3,8 +3,8 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: var(--padding-often);
     padding-top: var(--padding-often);
+    padding-bottom: 0px;
   }
   &__items {
     margin-right: 0px;
@@ -17,9 +17,12 @@
       display: flex;
       flex-direction: column;
       flex-basis: calc((100% - 30px) / 2);
+      align-items: start;
+      margin-bottom: 0px;
     }
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 90px) / 4);
+      align-items: start;
     }
   }
   &__card {
@@ -61,6 +64,9 @@
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      align-content: flex-start;
+    }
   }
   &__text {
     font-weight: 400;
@@ -78,6 +84,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+      margin-bottom: 0px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
